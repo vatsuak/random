@@ -143,8 +143,3 @@ with tf.Session() as sess:
         env.render()
         action_val, gradients_val = sess.run([action, gradients], feed_dict={X: observations.reshape(1, num_inps)})
         observations, reward, done, info = env.step(action_val[0][0])
-
-
-
-
-
