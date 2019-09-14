@@ -32,7 +32,8 @@ obs_pl = tf.placeholder(tf.float32,[None,4],'obseravtions')
 num_epi = 200
 num_steps = 50
 out = net(obs_pl,2)
-action = tf.multinomial(out,num_samples=1)
+probs = tf.concat(1,values = [out,1-out])
+action = tf.multinomial(probs,num_samples=1)
 init = tf.global_variables_initializer()
 avg_steps = []
 # print action 
@@ -42,6 +43,7 @@ with tf.Session() as sess:
     sess.run(init)
     for epi in range(num_epi):
         obs = env.reset()
+        env.render()
         obs = np.reshape(obs, [1,4])
         # print obs.shape
         for step in range(num_steps):
