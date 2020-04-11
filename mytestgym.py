@@ -8,7 +8,7 @@ env = gym.make('CartPole-v1')
 print 'Initial observation'
 obs = env.reset()
 print obs
-for t in range(1000):
+for t in range(100000):
     env.render()
     # action = env.action_space.sample()
     if obs[2]<0:         # if pole angle is to the left, go left, else go right (hard coded policy) 
@@ -17,5 +17,5 @@ for t in range(1000):
         action = 1
     print 'action',t,':',action 
     obs, reward, done, info = env.step(action)
-    if done: break
+    # if done: break
     print('obs: {} ; reward: {} done: {} info: {}'.format(obs, reward, done, info))

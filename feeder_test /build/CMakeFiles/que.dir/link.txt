@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/que.dir/queue_check.cpp.o  -o que 

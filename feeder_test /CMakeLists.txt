@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.5)
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+add_definitions(-D_GLIBCXX_USE_CXX11_ABI=0)
+add_executable(que queue_check.cpp)
