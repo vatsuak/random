@@ -1,3 +1,0 @@
-/home/vatsuak/Desktop/ramdom_practice/tf_cpp_test/build/CMakeFiles/edit_cache.dir
-/home/vatsuak/Desktop/ramdom_practice/tf_cpp_test/build/CMakeFiles/test_tf.dir
-/home/vatsuak/Desktop/ramdom_practice/tf_cpp_test/build/CMakeFiles/rebuild_cache.dir
